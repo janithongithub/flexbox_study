@@ -1,0 +1,155 @@
+<head>
+    <style>
+        @media (min-width: 568px) {
+
+            .container-1{
+            display:flex;       /* display side by side horizontally taking up whole width. no floats needed to display like this */   
+            
+            /*
+            align-items: flex-end;
+            align-items: flex-start;
+            align-items: center;
+
+            align-items: strech;  //default 
+
+            flex-direction: column;     // direction of flex set to vertical    //row- horizontal
+            */
+            
+        }
+
+        .container-2{
+            display: flex;
+            justify-content: space-between;          /*  adjust (same)space around divs    */
+        }
+            
+        }
+
+        .container-3{
+            display: flex;
+            flex-wrap: wrap;    /*  divs get push down after a certain level    */
+            justify-content: space-between;
+        }
+
+
+
+        
+
+        .container-1 div, .container-2 div, .container-3 div{   /* .container-1 div gives each div inside container defined properties    .container gives whole div defined property */
+            border: 1px #ccc solid; 
+            padding: 10px;
+        }
+
+        h3{
+            color: blue;
+        }
+
+        .box-1{
+            flex:2;    /*  flex:auto adjust the width to mach full screen size   */
+            order: 2;   /* changes the order of boxes without changing HTML */
+
+            
+            
+            
+        }
+
+        .box-2{
+            flex:1;
+            order: 1;
+            
+        }
+
+        .box-3{
+            flex:1;
+            order: 3;
+            
+        }
+
+        .container-2-box{
+            flex-basis: 27%;        /*By default, if you have a width set and did not declare a flex basis value, 
+                                    width will function normally on that element. There is no difference between how flex-basis: 
+                                    will function on your element and how width: will function on your element. 
+                                    Width will even obey flex-shrink when using Flexbox
+                                    */
+        }
+
+        .container-3-box{
+            flex-basis: 12%;
+        }
+
+    </style>
+<head>
+<body>
+    <div class="container-1">
+        <div class="box-1">
+            <h3>box-1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+        </div>
+        <div class="box-2">
+            <h3>box-2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+        </div>
+        <div class="box-3">
+            <h3>box-3</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+        </div>
+    </div>
+
+    <div class="container-2">
+        <div class="container-2-box">
+            <h3>box-4</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+            </p>
+
+        </div>
+        <div class="container-2-box">
+            <h3>box-5</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+        </div>
+        <div class="container-2-box">
+            <h3>box-6</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+        </div>
+
+        
+    </div>
+
+    <div class="container-3">
+        <div class="container-3-box">
+            <h3>box-7</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+        <div class="container-3-box">
+            <h3>box-8</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+        <div class="container-3-box">
+            <h3>box-9</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+        <div class="container-3-box">
+            <h3>box-10</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+        <div class="container-3-box">
+            <h3>box-11</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+        <div class="container-3-box">
+            <h3>box-12</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </div>
+
+
+<body>
